@@ -23,27 +23,50 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
-    self.locationHistoryTableView.tableFooterView = [UIView new];
     
-    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"locationArray"]!=nil)
-    {
-        locationArray = [[NSMutableArray alloc]initWithArray:[[NSUserDefaults standardUserDefaults] valueForKey:@"locationArray"]];
-        countryArray = [[NSMutableArray alloc]initWithArray:[[NSUserDefaults standardUserDefaults] valueForKey:@"countryArray"]];
-    }
-    else
-    {
-        locationArray = [NSMutableArray new];
-        countryArray = [NSMutableArray new];
-    }
+    NSURL * url = [NSURL URLWithString:@"https://www.google.com/maps/timeline?pb=!1m2!3m1!1s2017"];
     
-    locationManager = [[CLLocationManager alloc]init]; // initializing locationManager
-    [locationManager requestWhenInUseAuthorization];
-    locationManager.delegate = self; // we set the delegate of locationManager to self.
-    locationManager.desiredAccuracy = kCLLocationAccuracyBest; // setting the accuracy
+    [self.webviewOutlet setContentMode:UIViewContentModeRedraw];
     
+    [self.webviewOutlet loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    
+//    self.locationHistoryTableView.tableFooterView = [UIView new];
+//    NSMutableURLRequest * channelRequest = [[NSMutableURLRequest alloc]initWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"https://maps.google.com/maps/feeds/maps/default/full?access_token=%@",[[NSUserDefaults standardUserDefaults] valueForKey:@"GoogleUserObject"]]]];
+//
+//    [[[NSURLSession sharedSession] dataTaskWithRequest:channelRequest completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error)
+//      {
+//          if(data)
+//          {
+//              NSLog(@"%@",[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil]);
+//          }
+//      }] resume] ;
+//    if ([[NSUserDefaults standardUserDefaults] valueForKey:@"locationArray"]!=nil)
+//    {
+//        locationArray = [[NSMutableArray alloc]initWithArray:[[NSUserDefaults standardUserDefaults] valueForKey:@"locationArray"]];
+//        countryArray = [[NSMutableArray alloc]initWithArray:[[NSUserDefaults standardUserDefaults] valueForKey:@"countryArray"]];
+//    }
+//    else
+//    {
+//        locationArray = [NSMutableArray new];
+//        countryArray = [NSMutableArray new];
+//    }
+//    locationManager = [[CLLocationManager alloc]init]; // initializing locationManager
+//    [locationManager requestWhenInUseAuthorization];
+//    locationManager.delegate = self; // we set the delegate of locationManager to self.
+//    locationManager.desiredAccuracy = kCLLocationAccuracyBest; // setting the accuracy
+//    [self prefersStatusBarHidden];
+}
 
-    
+
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskLandscape;
+}
+
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 #pragma mark - TableView delegate Methods

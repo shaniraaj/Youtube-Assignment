@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YoutubePlayerController.h"
+#import <GooglePlaces/GooglePlaces.h>
 
 @interface AppDelegate ()
 
@@ -17,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //Maps API
+
+    [GMSPlacesClient provideAPIKey:@"AIzaSyCz6AG7NnciWhyDkA7DrKZZ96rjojjLido "];
+    //[GMSServices provideAPIKey:@"AIzaSyCz6AG7NnciWhyDkA7DrKZZ96rjojjLido"];
+    
     [GIDSignIn sharedInstance].clientID = @"100462326697-epmu3kd2kajcrh0ftia2buvsqsoqrr4a.apps.googleusercontent.com";
     [GIDSignIn sharedInstance].delegate = self;
     NSArray * currentScopes = GIDSignIn.sharedInstance.scopes;
@@ -61,7 +67,10 @@
                                       fullName]};
     [[NSNotificationCenter defaultCenter] postNotificationName:@"ToggleAuthUINotification" object:nil userInfo:statusText];
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"navigateToYoutube" object:nil];
+    if(user.authentication.accessToken!=nil)
+    {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"navigateToYoutube" object:nil];
+    }
     
 }
 

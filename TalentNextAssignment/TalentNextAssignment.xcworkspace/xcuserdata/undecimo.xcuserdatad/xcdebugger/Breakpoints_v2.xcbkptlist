@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TalentNextAssignment/ViewController.m"
-            timestampString = "531653107.009792"
+            timestampString = "531902219.596642"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71">
+            startingLineNumber = "79"
+            endingLineNumber = "79">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -49,14 +49,22 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TalentNextAssignment/Youtube/YoutubePlayerController.m"
-            timestampString = "531659969.00276"
+            filePath = "TalentNextAssignment/AppDelegate.m"
+            timestampString = "531902219.596761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "189"
-            endingLineNumber = "189"
-            landmarkName = "-startActivityIndicator"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "-signIn:didSignInForUser:withError:"
             landmarkType = "7">
+            <Actions>
+               <BreakpointActionProxy
+                  ActionExtensionID = "Xcode.BreakpointAction.DebuggerCommand">
+                  <ActionContent
+                     consoleCommand = "po NSLog(@&quot;%@&quot;,user.authentication.accessToken)">
+                  </ActionContent>
+               </BreakpointActionProxy>
+            </Actions>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -65,13 +73,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TalentNextAssignment/Maps Group/LocationHistory.m"
-            timestampString = "531658321.35161"
+            filePath = "TalentNextAssignment/AppDelegate.m"
+            timestampString = "531902219.59682"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "-signIn:didSignInForUser:withError:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CLLocationManager.h>
 #import <CoreLocation/CoreLocation.h>
+#import <WebKit/WebKit.h>
 
 @interface LocationHistory : UIViewController<UITableViewDelegate,UITableViewDataSource,CLLocationManagerDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *locationHistoryTableView;
 - (IBAction)signOutButtonAction:(UIBarButtonItem *)sender;
 - (IBAction)updatingLocation:(UIBarButtonItem *)sender;
+
+@property (strong, nonatomic) IBOutlet WKWebView *webviewOutlet;
 
 @end

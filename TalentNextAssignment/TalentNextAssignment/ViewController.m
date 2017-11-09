@@ -21,8 +21,10 @@
     [GIDSignIn sharedInstance].uiDelegate = self;
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(navigateToYotubeConsole) name:@"navigateToYoutube" object:false];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
+
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -39,8 +41,14 @@
         self.loggedUserName.hidden=YES;
         self.signoutButOutlet.hidden=YES;
     }
-    
+    [self prefersStatusBarHidden];
 }
+
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
+
 
 -(void)navigateToYotubeConsole
 {

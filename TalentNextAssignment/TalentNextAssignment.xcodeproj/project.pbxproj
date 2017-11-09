@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9F0659BE31D1A5F5B5287547 /* libPods-TalentNextAssignment.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6549AB3337F6323B45FE5C /* libPods-TalentNextAssignment.a */; };
+		F83290421FB211AD008E5B73 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E376F11FAF775C007DE847 /* CoreLocation.framework */; };
 		F87B2C0F1FAA2EDA004D3ACD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B2C0E1FAA2EDA004D3ACD /* AppDelegate.m */; };
 		F87B2C121FAA2EDA004D3ACD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B2C111FAA2EDA004D3ACD /* ViewController.m */; };
-		F87B2C151FAA2EDA004D3ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87B2C131FAA2EDA004D3ACD /* Main.storyboard */; };
 		F87B2C171FAA2EDA004D3ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F87B2C161FAA2EDA004D3ACD /* Assets.xcassets */; };
-		F87B2C1A1FAA2EDA004D3ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87B2C181FAA2EDA004D3ACD /* LaunchScreen.storyboard */; };
 		F87B2C1D1FAA2EDA004D3ACD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F87B2C1C1FAA2EDA004D3ACD /* main.m */; };
 		F87B2C241FAA3264004D3ACD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F87B2C231FAA3264004D3ACD /* GoogleService-Info.plist */; };
 		F880973E1FAB58C80054E152 /* YoutubePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = F880973D1FAB58C80054E152 /* YoutubePlayerController.m */; };
@@ -30,9 +29,10 @@
 		F88698221FB07C9D00374DA3 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F88698191FB07C9D00374DA3 /* AFURLSessionManager.m */; };
 		F8E3703D1FAF0C91007DE847 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E36B701FAF0281007DE847 /* Security.framework */; };
 		F8E376EC1FAF64B9007DE847 /* VideoDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E376EB1FAF64B9007DE847 /* VideoDetailsController.m */; };
-		F8E376EE1FAF6BD9007DE847 /* google-search.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F8E376ED1FAF6BD8007DE847 /* google-search.jpg */; };
-		F8E376F01FAF6E65007DE847 /* loginButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E376EF1FAF6E65007DE847 /* loginButton.png */; };
 		F8E376F51FAF778C007DE847 /* LocationHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = F8E376F41FAF778C007DE847 /* LocationHistory.m */; };
+		F8E683FB1FB3662A004973C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E683F71FB36629004973C0 /* LaunchScreen.storyboard */; };
+		F8E683FC1FB3662A004973C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8E683F91FB36629004973C0 /* Main.storyboard */; };
+		F8E683FF1FB37099004973C0 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8E36B721FAF0299007DE847 /* WebKit.framework */; };
 		F8F956DF1FACDD0500FF7536 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F956DD1FACDD0500FF7536 /* YTPlayerView.m */; };
 		F8F956E11FADDF5B00FF7536 /* Assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F8F956E01FADDF5B00FF7536 /* Assets.bundle */; };
 /* End PBXBuildFile section */
@@ -41,14 +41,14 @@
 		0A6549AB3337F6323B45FE5C /* libPods-TalentNextAssignment.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TalentNextAssignment.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B6034C2C643C25957E7004 /* Pods-TalentNextAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalentNextAssignment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TalentNextAssignment/Pods-TalentNextAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		AD441B6A8F104A3BB2F66C50 /* Pods-TalentNextAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalentNextAssignment.release.xcconfig"; path = "Pods/Target Support Files/Pods-TalentNextAssignment/Pods-TalentNextAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		F83290401FB21197008E5B73 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F83290411FB211A1008E5B73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F87B2C0A1FAA2EDA004D3ACD /* TalentNextAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalentNextAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87B2C0D1FAA2EDA004D3ACD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F87B2C0E1FAA2EDA004D3ACD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F87B2C101FAA2EDA004D3ACD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F87B2C111FAA2EDA004D3ACD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		F87B2C141FAA2EDA004D3ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F87B2C161FAA2EDA004D3ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F87B2C191FAA2EDA004D3ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F87B2C1B1FAA2EDA004D3ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F87B2C1C1FAA2EDA004D3ACD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F87B2C231FAA3264004D3ACD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -84,11 +84,11 @@
 		F8E3703C1FAF0C8A007DE847 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		F8E376EA1FAF64B9007DE847 /* VideoDetailsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoDetailsController.h; sourceTree = "<group>"; };
 		F8E376EB1FAF64B9007DE847 /* VideoDetailsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoDetailsController.m; sourceTree = "<group>"; };
-		F8E376ED1FAF6BD8007DE847 /* google-search.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "google-search.jpg"; sourceTree = "<group>"; };
-		F8E376EF1FAF6E65007DE847 /* loginButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginButton.png; sourceTree = "<group>"; };
 		F8E376F11FAF775C007DE847 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F8E376F31FAF778C007DE847 /* LocationHistory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationHistory.h; sourceTree = "<group>"; };
 		F8E376F41FAF778C007DE847 /* LocationHistory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationHistory.m; sourceTree = "<group>"; };
+		F8E683F81FB36629004973C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TalentNextAssignment/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8E683FA1FB36629004973C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TalentNextAssignment/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8F956DD1FACDD0500FF7536 /* YTPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTPlayerView.m; sourceTree = "<group>"; };
 		F8F956DE1FACDD0500FF7536 /* YTPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTPlayerView.h; sourceTree = "<group>"; };
 		F8F956E01FADDF5B00FF7536 /* Assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Assets.bundle; sourceTree = "<group>"; };
@@ -99,6 +99,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E683FF1FB37099004973C0 /* WebKit.framework in Frameworks */,
+				F83290421FB211AD008E5B73 /* CoreLocation.framework in Frameworks */,
 				F8E3703D1FAF0C91007DE847 /* Security.framework in Frameworks */,
 				9F0659BE31D1A5F5B5287547 /* libPods-TalentNextAssignment.a in Frameworks */,
 			);
@@ -119,6 +121,8 @@
 		6A02BC73ABAFF7C8299BCD42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F83290411FB211A1008E5B73 /* CoreGraphics.framework */,
+				F83290401FB21197008E5B73 /* Accelerate.framework */,
 				F8E376F11FAF775C007DE847 /* CoreLocation.framework */,
 				F8E3703C1FAF0C8A007DE847 /* SystemConfiguration.framework */,
 				F8E36B721FAF0299007DE847 /* WebKit.framework */,
@@ -129,9 +133,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F832903B1FB210B8008E5B73 /* Google Maps Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Google Maps Framework";
+			sourceTree = "<group>";
+		};
 		F87B2C011FAA2EDA004D3ACD = {
 			isa = PBXGroup;
 			children = (
+				F832903B1FB210B8008E5B73 /* Google Maps Framework */,
 				F88698061FB07C9D00374DA3 /* AFNetworking */,
 				F87B2C0C1FAA2EDA004D3ACD /* TalentNextAssignment */,
 				F87B2C0B1FAA2EDA004D3ACD /* Products */,
@@ -151,21 +163,18 @@
 		F87B2C0C1FAA2EDA004D3ACD /* TalentNextAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				F8E683FD1FB36EA8004973C0 /* Designable Button  */,
 				F88697CE1FB05CAA00374DA3 /* ActivityIndicator */,
-				F88697CB1FB0581D00374DA3 /* ButtonX.h */,
-				F88697CC1FB0582100374DA3 /* ButtonX.m */,
 				F8E376F21FAF776E007DE847 /* Maps Group */,
-				F8E376EF1FAF6E65007DE847 /* loginButton.png */,
-				F8E376ED1FAF6BD8007DE847 /* google-search.jpg */,
 				F8E376E91FAF6333007DE847 /* VIdeo Details  */,
 				F88097381FAB585F0054E152 /* Youtube */,
 				F87B2C0D1FAA2EDA004D3ACD /* AppDelegate.h */,
 				F87B2C0E1FAA2EDA004D3ACD /* AppDelegate.m */,
 				F87B2C101FAA2EDA004D3ACD /* ViewController.h */,
 				F87B2C111FAA2EDA004D3ACD /* ViewController.m */,
-				F87B2C131FAA2EDA004D3ACD /* Main.storyboard */,
 				F87B2C161FAA2EDA004D3ACD /* Assets.xcassets */,
-				F87B2C181FAA2EDA004D3ACD /* LaunchScreen.storyboard */,
+				F8E683F71FB36629004973C0 /* LaunchScreen.storyboard */,
+				F8E683F91FB36629004973C0 /* Main.storyboard */,
 				F87B2C1B1FAA2EDA004D3ACD /* Info.plist */,
 				F87B2C231FAA3264004D3ACD /* GoogleService-Info.plist */,
 				F88097411FAB97B60054E152 /* client_593693977591-skndo238sbmc7rcu8jo7gj14bgn0n8ao.apps.googleusercontent.com.plist */,
@@ -240,6 +249,15 @@
 			path = "Maps Group";
 			sourceTree = "<group>";
 		};
+		F8E683FD1FB36EA8004973C0 /* Designable Button  */ = {
+			isa = PBXGroup;
+			children = (
+				F88697CB1FB0581D00374DA3 /* ButtonX.h */,
+				F88697CC1FB0582100374DA3 /* ButtonX.m */,
+			);
+			path = "Designable Button ";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,8 +302,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 				English,
+				Base,
 			);
 			mainGroup = F87B2C011FAA2EDA004D3ACD;
 			productRefGroup = F87B2C0B1FAA2EDA004D3ACD /* Products */;
@@ -302,14 +320,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F87B2C1A1FAA2EDA004D3ACD /* LaunchScreen.storyboard in Resources */,
-				F8E376F01FAF6E65007DE847 /* loginButton.png in Resources */,
 				F87B2C241FAA3264004D3ACD /* GoogleService-Info.plist in Resources */,
 				F8F956E11FADDF5B00FF7536 /* Assets.bundle in Resources */,
+				F8E683FC1FB3662A004973C0 /* Main.storyboard in Resources */,
 				F87B2C171FAA2EDA004D3ACD /* Assets.xcassets in Resources */,
+				F8E683FB1FB3662A004973C0 /* LaunchScreen.storyboard in Resources */,
 				F88097421FAB97B60054E152 /* client_593693977591-skndo238sbmc7rcu8jo7gj14bgn0n8ao.apps.googleusercontent.com.plist in Resources */,
-				F87B2C151FAA2EDA004D3ACD /* Main.storyboard in Resources */,
-				F8E376EE1FAF6BD9007DE847 /* google-search.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,20 +408,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F87B2C131FAA2EDA004D3ACD /* Main.storyboard */ = {
+		F8E683F71FB36629004973C0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F87B2C141FAA2EDA004D3ACD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F87B2C181FAA2EDA004D3ACD /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F87B2C191FAA2EDA004D3ACD /* Base */,
+				F8E683F81FB36629004973C0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F8E683F91FB36629004973C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8E683FA1FB36629004973C0 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -415,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -470,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -522,6 +540,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Google\\ Maps\\ Framework",
+					"$(PROJECT_DIR)/Google\\ Maps\\ Framework",
+				);
 				GCC_C_LANGUAGE_STANDARD = c11;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,6 +592,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Google\\ Maps\\ Framework",
+					"$(PROJECT_DIR)/Google\\ Maps\\ Framework",
+				);
 				GCC_C_LANGUAGE_STANDARD = c11;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",

@@ -13,7 +13,7 @@
 #import "VideoDetailsController.h"
 #import "ActivityIndicator.h"
 #import "ViewController.h"
-#define APIKey "AIzaSyCBu3NZFxZy6wtdsKjRDDiVetS9oNcbJNM"
+#define APIKey "AIzaSyDHWlpH8dtmIRX6VcfwlFFXm_rYVxJPDXs"
 
 @interface YoutubePlayerController ()
 {
@@ -21,10 +21,23 @@
     BOOL reloadAfterSelection;
     NSIndexPath * selectedIndexPath;
     ActivityIndicator * activityBlurView;
+    UIRefreshControl *refreshControl;
 }
 @end
 
 @implementation YoutubePlayerController
+-(void)viewDidLoad
+{
+    refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refreshVideos:) forControlEvents:UIControlEventValueChanged];
+    [self.ChannelTableView addSubview:refreshControl];
+}
+
+-(void)refreshVideos:(UIRefreshControl*)refresh
+{
+    [self viewWillAppear:YES];
+    
+}
 
 -(void)viewWillAppear:(BOOL)animated
 {
@@ -69,6 +82,7 @@
          
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.ChannelTableView reloadData];
+                [refreshControl endRefreshing];
             });
         }
     }] resume] ;

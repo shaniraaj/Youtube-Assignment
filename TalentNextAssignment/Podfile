@@ -6,6 +6,14 @@ target 'TalentNextAssignment' do
   # use_frameworks!
   pod 'GoogleAPIClientForREST/YouTube', '~> 1.2.1'
   pod 'GoogleSignIn'
+
+
+  source 'https://github.com/CocoaPods/Specs.git'
+
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+  pod 'GoogleMaps'
+
   # Pods for TalentNextAssignment
 
 end

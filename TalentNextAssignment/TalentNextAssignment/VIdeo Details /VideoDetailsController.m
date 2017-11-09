@@ -19,6 +19,13 @@
 {
     [super viewWillAppear:animated];
     [self.doneButtonAction setAction:@selector(setTheTitleAndDescriptionAndUpload)];
+    [self prefersStatusBarHidden];
+}
+
+
+-(BOOL)prefersStatusBarHidden
+{
+    return YES;
 }
 
 -(void)setTheTitleAndDescriptionAndUpload
@@ -58,7 +65,13 @@
 //        }]];
     }];
     
-    [self.navigationController popViewControllerAnimated:YES];
+            UIAlertController * alert = [UIAlertController alertControllerWithTitle:nil message:@"Video will upload in background please refresh the videos after sometime." preferredStyle:UIAlertControllerStyleAlert];
+            [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                    [self.navigationController popViewControllerAnimated:YES];
+            }]];
+    
+    
+    
 }
 
 
